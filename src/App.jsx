@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
+import { useStateContext } from './contexts/contextsProvider.jsx';
 
 import { Navbar, Footer, SideBar, ThemeSettings } from './components/index.jsx'
 import {Ecommerce, Orders, Calendar, Editor, Stacked, Pyramid,Customers, 
@@ -11,8 +12,7 @@ import {Ecommerce, Orders, Calendar, Editor, Stacked, Pyramid,Customers,
   Employees, Line}from './pages/index.jsx'
 
 const App = () => {
-
-  const activeMenu = true
+  const {activeMenu,setActiveMenu}= useStateContext()
   return (
     <div>
           <BrowserRouter>
@@ -45,7 +45,6 @@ const App = () => {
             <div className='fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full'>
               <Navbar></Navbar>
             </div>
-          </div>
           <div>
             <Routes>
               {/* Dashboard */}
@@ -74,6 +73,7 @@ const App = () => {
               <Route path='/stacked' element={<Stacked/>}></Route>
 
             </Routes>
+          </div>
           </div>
         </div>
       </BrowserRouter>

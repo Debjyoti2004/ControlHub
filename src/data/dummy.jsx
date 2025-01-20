@@ -513,7 +513,7 @@ export const links = [
         icon: <FiEdit />,
       },
       {
-        name: 'color-picker',
+        name: 'color_picker',
         icon: <BiColorFill />,
       },
     ],
@@ -543,7 +543,7 @@ export const links = [
         icon: <RiStockLine />,
       },
       {
-        name: 'color-mapping',
+        name: 'color_mapping',
         icon: <BsBarChart />,
       },
       {
