@@ -26,7 +26,7 @@ import product8 from './product8.jpg';
 export const gridOrderImage = (props) => (
   <div>
     <img
-      className="rounded-xl h-20 md:ml-3"
+      className="h-20 rounded-xl md:ml-3"
       src={props.ProductImage}
       alt="order-item"
     />
@@ -37,7 +37,7 @@ export const gridOrderStatus = (props) => (
   <button
     type="button"
     style={{ background: props.StatusBg }}
-    className="text-white py-1 px-2 capitalize rounded-2xl text-md"
+    className="px-2 py-1 text-white capitalize rounded-2xl text-md"
   >
     {props.Status}
   </button>
@@ -64,7 +64,7 @@ export const kanbanGrid = [
 const gridEmployeeProfile = (props) => (
   <div className="flex items-center gap-2">
     <img
-      className="rounded-full w-10 h-10"
+      className="w-10 h-10 rounded-full"
       src={props.EmployeeImage}
       alt="employee"
     />
@@ -121,9 +121,9 @@ export const EditorData = () => (
   </div>
 );
 const customerGridImage = (props) => (
-  <div className="image flex gap-4">
+  <div className="flex gap-4 image">
     <img
-      className="rounded-full w-10 h-10"
+      className="w-10 h-10 rounded-full"
       src={props.CustomerImage}
       alt="employee"
     />
@@ -135,8 +135,8 @@ const customerGridImage = (props) => (
 );
 
 const customerGridStatus = (props) => (
-  <div className="flex gap-2 justify-center items-center text-gray-700 capitalize">
-    <p style={{ background: props.StatusBg }} className="rounded-full h-3 w-3" />
+  <div className="flex items-center justify-center gap-2 text-gray-700 capitalize">
+    <p style={{ background: props.StatusBg }} className="w-3 h-3 rounded-full" />
     <p>{props.Status}</p>
   </div>
 );
@@ -1514,7 +1514,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Siegbert Gottfried',
+    Name: 'Emma',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'USA',
@@ -1524,20 +1524,20 @@ export const employeesData = [
   },
   {
     EmployeeID: 5,
-    Name: 'Omar Darobe',
+    Name: 'Debjyoti',
     Title: 'HR',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'INDIA',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
   },
   {
     EmployeeID: 4,
-    Name: 'Penjani Inyene',
+    Name: 'Debjyoti',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
-    Country: 'USA',
+    Country: 'INDIA',
     ReportsTo: 'Carson',
     EmployeeImage:
       avatar,
@@ -2849,192 +2849,192 @@ export const scheduleData = [
     Id: 1,
     Subject: 'Explosion of Betelgeuse Star',
     Location: 'Space Center USA',
-    StartTime: '2021-01-10T04:00:00.000Z',
-    EndTime: '2021-01-10T05:30:00.000Z',
+    StartTime: '2024-01-10T04:00:00.000Z',
+    EndTime: '2024-01-10T05:30:00.000Z',
     CategoryColor: '#1aaa55',
   },
   {
     Id: 2,
     Subject: 'Thule Air Crash Report',
     Location: 'Newyork City',
-    StartTime: '2021-01-11T06:30:00.000Z',
-    EndTime: '2021-01-11T08:30:00.000Z',
+    StartTime: '2024-01-11T06:30:00.000Z',
+    EndTime: '2024-01-11T08:30:00.000Z',
     CategoryColor: '#357cd2',
   },
   {
     Id: 3,
     Subject: 'Blue Moon Eclipse',
     Location: 'Space Center USA',
-    StartTime: '2021-01-12T04:00:00.000Z',
-    EndTime: '2021-01-12T05:30:00.000Z',
+    StartTime: '2024-01-12T04:00:00.000Z',
+    EndTime: '2024-01-12T05:30:00.000Z',
     CategoryColor: '#7fa900',
   },
   {
     Id: 4,
     Subject: 'Meteor Showers in 2021',
     Location: 'Space Center USA',
-    StartTime: '2021-01-13T07:30:00.000Z',
-    EndTime: '2021-01-13T09:00:00.000Z',
+    StartTime: '2024-01-13T07:30:00.000Z',
+    EndTime: '2024-01-13T09:00:00.000Z',
     CategoryColor: '#ea7a57',
   },
   {
     Id: 5,
     Subject: 'Milky Way as Melting pot',
     Location: 'Space Center USA',
-    StartTime: '2021-01-14T06:30:00.000Z',
-    EndTime: '2021-01-14T08:30:00.000Z',
+    StartTime: '2024-01-14T06:30:00.000Z',
+    EndTime: '2024-01-14T08:30:00.000Z',
     CategoryColor: '#00bdae',
   },
   {
     Id: 6,
     Subject: 'Mysteries of Bermuda Triangle',
     Location: 'Bermuda',
-    StartTime: '2021-01-14T04:00:00.000Z',
-    EndTime: '2021-01-14T05:30:00.000Z',
+    StartTime: '2024-01-14T04:00:00.000Z',
+    EndTime: '2024-01-14T05:30:00.000Z',
     CategoryColor: '#f57f17',
   },
   {
     Id: 7,
     Subject: 'Glaciers and Snowflakes',
     Location: 'Himalayas',
-    StartTime: '2021-01-15T05:30:00.000Z',
-    EndTime: '2021-01-15T07:00:00.000Z',
+    StartTime: '2024-01-15T05:30:00.000Z',
+    EndTime: '2024-01-15T07:00:00.000Z',
     CategoryColor: '#1aaa55',
   },
   {
     Id: 8,
     Subject: 'Life on Mars',
     Location: 'Space Center USA',
-    StartTime: '2021-01-16T03:30:00.000Z',
-    EndTime: '2021-01-16T04:30:00.000Z',
+    StartTime: '2024-01-16T03:30:00.000Z',
+    EndTime: '2024-01-16T04:30:00.000Z',
     CategoryColor: '#357cd2',
   },
   {
     Id: 9,
     Subject: 'Alien Civilization',
     Location: 'Space Center USA',
-    StartTime: '2021-01-18T05:30:00.000Z',
-    EndTime: '2021-01-18T07:30:00.000Z',
+    StartTime: '2024-01-18T05:30:00.000Z',
+    EndTime: '2024-01-18T07:30:00.000Z',
     CategoryColor: '#7fa900',
   },
   {
     Id: 10,
     Subject: 'Wildlife Galleries',
     Location: 'Africa',
-    StartTime: '2021-01-20T05:30:00.000Z',
-    EndTime: '2021-01-20T07:30:00.000Z',
+    StartTime: '2024-01-20T05:30:00.000Z',
+    EndTime: '2024-01-20T07:30:00.000Z',
     CategoryColor: '#ea7a57',
   },
   {
     Id: 11,
     Subject: 'Best Photography 2021',
     Location: 'London',
-    StartTime: '2021-01-21T04:00:00.000Z',
-    EndTime: '2021-01-21T05:30:00.000Z',
+    StartTime: '2024-01-21T04:00:00.000Z',
+    EndTime: '2024-01-21T05:30:00.000Z',
     CategoryColor: '#00bdae',
   },
   {
     Id: 12,
     Subject: 'Smarter Puppies',
     Location: 'Sweden',
-    StartTime: '2021-01-08T04:30:00.000Z',
-    EndTime: '2021-01-08T06:00:00.000Z',
+    StartTime: '2024-01-08T04:30:00.000Z',
+    EndTime: '2024-01-08T06:00:00.000Z',
     CategoryColor: '#f57f17',
   },
   {
     Id: 13,
     Subject: 'Myths of Andromeda Galaxy',
     Location: 'Space Center USA',
-    StartTime: '2021-01-06T05:00:00.000Z',
-    EndTime: '2021-01-06T07:00:00.000Z',
+    StartTime: '2024-01-06T05:00:00.000Z',
+    EndTime: '2024-01-06T07:00:00.000Z',
     CategoryColor: '#1aaa55',
   },
   {
     Id: 14,
     Subject: 'Aliens vs Humans',
     Location: 'Research Center of USA',
-    StartTime: '2021-01-05T04:30:00.000Z',
-    EndTime: '2021-01-05T06:00:00.000Z',
+    StartTime: '2024-01-05T04:30:00.000Z',
+    EndTime: '2024-01-05T06:00:00.000Z',
     CategoryColor: '#357cd2',
   },
   {
     Id: 15,
     Subject: 'Facts of Humming Birds',
     Location: 'California',
-    StartTime: '2021-01-19T04:00:00.000Z',
-    EndTime: '2021-01-19T05:30:00.000Z',
+    StartTime: '2024-01-19T04:00:00.000Z',
+    EndTime: '2024-01-19T05:30:00.000Z',
     CategoryColor: '#7fa900',
   },
   {
     Id: 16,
     Subject: 'Sky Gazers',
     Location: 'Alaska',
-    StartTime: '2021-01-22T05:30:00.000Z',
-    EndTime: '2021-01-22T07:30:00.000Z',
+    StartTime: '2024-01-22T05:30:00.000Z',
+    EndTime: '2024-01-22T07:30:00.000Z',
     CategoryColor: '#ea7a57',
   },
   {
     Id: 17,
     Subject: 'The Cycle of Seasons',
     Location: 'Research Center of USA',
-    StartTime: '2021-01-11T00:00:00.000Z',
-    EndTime: '2021-01-11T02:00:00.000Z',
+    StartTime: '2024-01-11T00:00:00.000Z',
+    EndTime: '2024-01-11T02:00:00.000Z',
     CategoryColor: '#00bdae',
   },
   {
     Id: 18,
     Subject: 'Space Galaxies and Planets',
     Location: 'Space Center USA',
-    StartTime: '2021-01-11T11:30:00.000Z',
-    EndTime: '2021-01-11T13:00:00.000Z',
+    StartTime: '2024-01-11T11:30:00.000Z',
+    EndTime: '2024-01-11T13:00:00.000Z',
     CategoryColor: '#f57f17',
   },
   {
     Id: 19,
     Subject: 'Lifecycle of Bumblebee',
     Location: 'San Fransisco',
-    StartTime: '2021-01-14T00:30:00.000Z',
-    EndTime: '2021-01-14T02:00:00.000Z',
+    StartTime: '2024-01-14T00:30:00.000Z',
+    EndTime: '2024-01-14T02:00:00.000Z',
     CategoryColor: '#7fa900',
   },
   {
     Id: 20,
     Subject: 'Alien Civilization',
     Location: 'Space Center USA',
-    StartTime: '2021-01-14T10:30:00.000Z',
-    EndTime: '2021-01-14T12:30:00.000Z',
+    StartTime: '2024-01-14T10:30:00.000Z',
+    EndTime: '2024-01-14T12:30:00.000Z',
     CategoryColor: '#ea7a57',
   },
   {
     Id: 21,
     Subject: 'Alien Civilization',
     Location: 'Space Center USA',
-    StartTime: '2021-01-10T08:30:00.000Z',
-    EndTime: '2021-01-10T10:30:00.000Z',
+    StartTime: '2024-01-10T08:30:00.000Z',
+    EndTime: '2024-01-10T10:30:00.000Z',
     CategoryColor: '#ea7a57',
   },
   {
     Id: 22,
     Subject: 'The Cycle of Seasons',
     Location: 'Research Center of USA',
-    StartTime: '2021-01-12T09:00:00.000Z',
-    EndTime: '2021-01-12T10:30:00.000Z',
+    StartTime: '2024-01-12T09:00:00.000Z',
+    EndTime: '2024-01-12T10:30:00.000Z',
     CategoryColor: '#00bdae',
   },
   {
     Id: 23,
     Subject: 'Sky Gazers',
     Location: 'Greenland',
-    StartTime: '2021-01-15T09:00:00.000Z',
-    EndTime: '2021-01-15T10:30:00.000Z',
+    StartTime: '2024-01-15T09:00:00.000Z',
+    EndTime: '2024-01-15T10:30:00.000Z',
     CategoryColor: '#ea7a57',
   },
   {
     Id: 24,
     Subject: 'Facts of Humming Birds',
     Location: 'California',
-    StartTime: '2021-01-16T07:00:00.000Z',
-    EndTime: '2021-01-16T09:00:00.000Z',
+    StartTime: '2024-01-16T07:00:00.000Z',
+    EndTime: '2024-01-16T09:00:00.000Z',
     CategoryColor: '#7fa900',
   },
 ];
@@ -3083,11 +3083,12 @@ export const dropdownData = [
   },
 ];
 export const SparklineAreaData = [
-  { x: 1, yval: 2 },
-  { x: 2, yval: 6 },
-  { x: 3, yval: 8 },
-  { x: 4, yval: 5 },
-  { x: 5, yval: 10 },
+  { x: 1, y: 2 },
+  { x: 2, y: 6 },
+  { x: 3, y: 8 },
+  { x: 4, y: 5 },
+  { x: 5, y: 10 },
+  
 
 ];
 
@@ -3157,11 +3158,11 @@ export const ecomPieChartData = [
 export const stackedChartData = [
   [
     { x: 'Jan', y: 111.1 },
-    { x: 'Feb', y: 127.3 },
+    { x: 'Feb', y: 137.3 },
     { x: 'Mar', y: 143.4 },
-    { x: 'Apr', y: 159.9 },
-    { x: 'May', y: 159.9 },
-    { x: 'Jun', y: 159.9 },
+    { x: 'Apr', y: 212.9 },
+    { x: 'May', y: 209.9 },
+    { x: 'Jun', y: 190.9 },
     { x: 'July', y: 159.9 },
   ],
   [
