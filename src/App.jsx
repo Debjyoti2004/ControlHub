@@ -8,7 +8,7 @@ import { useStateContext } from './contexts/contextsProvider.jsx';
 
 import { Navbar, Footer, SideBar, ThemeSettings } from './components/index.jsx'
 import {Ecommerce, Orders, Calendar, Editor, Stacked, Pyramid,Customers, 
-  Kanban, Area, Bar, Financial, Pie,ColorMapping, ColorPicker,
+  Kanban, Area, Bar,ColorMapping, ColorPicker,
   Employees, Line}from './pages/index.jsx'
 
 const App = () => {
@@ -68,14 +68,13 @@ const App = () => {
               <Route path='/Line' element={<Line/>}></Route>
               <Route path='/area' element={<Area/>}></Route>
               <Route path='/bar' element={<Bar/>}></Route>
-              <Route path='/pie' element={<Pie/>}></Route>
-              <Route path='/financial' element={<Financial/>}></Route>
               <Route path='/color_mapping' element={<ColorMapping/>}></Route>
               <Route path='/pyramid' element={<Pyramid/>}></Route>
               <Route path='/stacked' element={<Stacked/>}></Route>
 
             </Routes>
           </div>
+          <Footer></Footer>
           </div>
         </div>
       </BrowserRouter>

@@ -2,8 +2,8 @@ import React from 'react'
 import { BsCurrencyDollar } from 'react-icons/bs'
 import { FaCircle } from "react-icons/fa";
 
-import { Stacked, Pie, Button, SparkLine } from '../components'
-import { earningData, SparklineAreaData, ecomPieChartData } from '../data/dummy'
+import { Stacked, Button, SparkLine } from '../components'
+import { earningData, SparklineAreaData } from '../data/dummy'
 import { useStateContext } from '../contexts/contextsProvider'
 
 const Ecommerce = () => {
