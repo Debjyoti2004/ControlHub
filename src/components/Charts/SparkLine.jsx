@@ -3,9 +3,8 @@ import { SparklineComponent, Inject, SparklineTooltip } from '@syncfusion/ej2-re
 
 
 
+const SparkLine = ({ id, data, height, width, color, type, currentColor }) => {
 
-const SparkLine = ({ id,data, height, width, color, type, currentColor }) => {
-  
   return (
     <SparklineComponent
       id={id}
@@ -21,7 +20,7 @@ const SparkLine = ({ id,data, height, width, color, type, currentColor }) => {
       type={type}
       tooltipSettings={{
         visible: true,
-        format: '${x} : data ${y}', 
+        format: '${x} : data ${y}',
       }}
     >
       <Inject services={[SparklineTooltip]} />
