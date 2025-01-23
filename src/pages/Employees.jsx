@@ -25,6 +25,7 @@ const Employees = () => {
         pageSettings={{ pageSize: 10 }} 
         toolbar={['Search']}
         width="auto"
+        
       >
         <ColumnsDirective>
           {employeesGrid.map((item, index) => (

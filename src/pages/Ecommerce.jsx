@@ -7,7 +7,7 @@ import { earningData, SparklineAreaData, ecomPieChartData } from '../data/dummy'
 import { useStateContext } from '../contexts/contextsProvider'
 
 const Ecommerce = () => {
-  const {currentColor} = useStateContext()
+  const {currentColor, currentMode} = useStateContext()
   return (
     <div className='mt-12'>
       <div className='flex flex-wrap justify-center lg:flex-nowrap'>
