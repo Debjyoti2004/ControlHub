@@ -38,10 +38,7 @@ module.exports = {
       minHeight: {
         590: '590px',
       },
-      backgroundImage: {
-        'hero-pattern':
-          "url('https://github.com/DebjyotiShit/image/blob/main/welcome-bg.jpg?raw=true')",
-      },
+      
     },
   },
   plugins: [],
