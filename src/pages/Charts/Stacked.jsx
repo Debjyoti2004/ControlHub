@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import { ChartsHeader, Stacked as StackedChart } from '../../components';
+import { ChartsHeader, Stacked as StackedChart } from '../../components'
 
 const Stacked = () => (
   <div className=' mt-36'>
@@ -11,6 +11,6 @@ const Stacked = () => (
       </div>
     </div>
   </div>
-);
+)
 
 export default Stacked;

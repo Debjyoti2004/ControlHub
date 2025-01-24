@@ -16,6 +16,7 @@ export const ContextProvider = ({ children }) => {
   const [currentColor, setCurrentColor] = useState("#03C9D7")
   const [currentMode, setCurrentMode] = useState("Light")
   const [themeSettings, setThemeSettings] = useState(false)
+  const [cartState,setCartState] = useState(true)
 
   useEffect(() => {
     const savedMode = localStorage.getItem("themeMode")
@@ -67,11 +68,12 @@ export const ContextProvider = ({ children }) => {
         setThemeSettings,
         setMode,
         setColor,
+        cartState,setCartState
       }}
     >
       {children}
     </StateContext.Provider>
-  );
-};
+  )
+}
 
-export const useStateContext = () => useContext(StateContext);
+export const useStateContext = () => useContext(StateContext)

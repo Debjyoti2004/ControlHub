@@ -1,12 +1,12 @@
-import React from 'react';
-import { AccumulationChartComponent, AccumulationSeriesCollectionDirective, AccumulationSeriesDirective, Inject, AccumulationLegend, AccumulationDataLabel, AccumulationTooltip, PyramidSeries, AccumulationSelection } from '@syncfusion/ej2-react-charts';
+import React from 'react'
+import { AccumulationChartComponent, AccumulationSeriesCollectionDirective, AccumulationSeriesDirective, Inject, AccumulationLegend, AccumulationDataLabel, AccumulationTooltip, PyramidSeries, AccumulationSelection } from '@syncfusion/ej2-react-charts'
 
-import { PyramidData } from '../../data/dummy';
-import { useStateContext } from '../../contexts/contextsProvider';
-import { ChartsHeader } from '../../components';
+import { PyramidData } from '../../data/dummy'
+import { useStateContext } from '../../contexts/contextsProvider'
+import { ChartsHeader } from '../../components'
 
 const Pyramid = () => {
-  const { currentMode } = useStateContext();
+  const { currentMode } = useStateContext()
 
   return (
     <div className='mt-36'>
@@ -44,7 +44,7 @@ const Pyramid = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default Pyramid;

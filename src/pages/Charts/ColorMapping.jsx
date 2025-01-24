@@ -1,12 +1,12 @@
-import React from 'react';
-import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, ColumnSeries, Category, Tooltip, Legend, RangeColorSettingsDirective, RangeColorSettingDirective } from '@syncfusion/ej2-react-charts';
+import React from 'react'
+import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, ColumnSeries, Category, Tooltip, Legend, RangeColorSettingsDirective, RangeColorSettingDirective } from '@syncfusion/ej2-react-charts'
 
-import { colorMappingData, ColorMappingPrimaryXAxis, ColorMappingPrimaryYAxis, rangeColorMapping } from '../../data/dummy';
-import { ChartsHeader } from '../../components';
-import { useStateContext } from '../../contexts/contextsProvider';
+import { colorMappingData, ColorMappingPrimaryXAxis, ColorMappingPrimaryYAxis, rangeColorMapping } from '../../data/dummy'
+import { ChartsHeader } from '../../components'
+import { useStateContext } from '../../contexts/contextsProvider'
 
 const ColorMapping = () => {
-  const { currentMode } = useStateContext();
+  const { currentMode } = useStateContext()
 
   return (
     <div className='mt-36'>
@@ -43,7 +43,7 @@ const ColorMapping = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ColorMapping;
+export default ColorMapping

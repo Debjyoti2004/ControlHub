@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaCircle } from "react-icons/fa";
+import { FaCircle } from "react-icons/fa"
 
 import { Stacked, Button, SparkLine } from '../components'
 import { earningData, SparklineAreaData } from '../data/dummy'

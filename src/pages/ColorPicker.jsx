@@ -1,15 +1,16 @@
-import React from 'react';
-import { ColorPickerComponent } from '@syncfusion/ej2-react-inputs';
+import React from 'react'
+import { ColorPickerComponent } from '@syncfusion/ej2-react-inputs'
 
-import { Header } from '../components';
+import { Header } from '../components'
 
 const change = (args) => {
   document.getElementById('preview').style.backgroundColor = args.currentValue.hex;
 };
 
-const CustomColorPicker = ({ id, mode }) => <ColorPickerComponent id={id} mode={mode} modeSwitcher={false} inline showButtons={false} change={change} />;
+const CustomColorPicker = ({ id, mode }) => <ColorPickerComponent id={id} mode={mode} modeSwitcher={false} inline showButtons={false} change={change} />
 
 const ColorPicker = () => (
+  <div className='mt-44'>
   <div className="p-2 m-2 mt-24 bg-white md:m-10 md:p-10 rounded-3xl">
     <Header category="App" title="Color Picker" />
     <div className="text-center">
@@ -26,6 +27,7 @@ const ColorPicker = () => (
       </div>
     </div>
   </div>
-);
+  </div>
+)
 
-export default ColorPicker;
+export default ColorPicker

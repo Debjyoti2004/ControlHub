@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import {
   GridComponent,
   ColumnsDirective,
@@ -7,9 +7,9 @@ import {
   Page,
   Toolbar,
   Inject,
-} from '@syncfusion/ej2-react-grids';
+} from '@syncfusion/ej2-react-grids'
 import { employeesData, employeesGrid } from '../data/dummy';
-import { Header } from '../components';
+import { Header } from '../components'
 
 
 const Employees = () => {
@@ -41,7 +41,7 @@ const Employees = () => {
         />
       </GridComponent>
     </div>
-  );
-};
+  )
+}
 
-export default Employees;
+export default Employees

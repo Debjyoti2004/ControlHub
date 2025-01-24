@@ -1,10 +1,11 @@
-import React from 'react';
-import { KanbanComponent, ColumnsDirective, ColumnDirective } from '@syncfusion/ej2-react-kanban';
+import React from 'react'
+import { KanbanComponent, ColumnsDirective, ColumnDirective } from '@syncfusion/ej2-react-kanban'
 
-import { kanbanData, kanbanGrid } from '../data/dummy';
-import { Header } from '../components';
+import { kanbanData, kanbanGrid } from '../data/dummy'
+import { Header } from '../components'
 
 const Kanban = () => (
+  <div className='mt-44'>
   <div className="p-2 m-2 mt-24 bg-white md:m-10 md:p-10 rounded-3xl">
     <Header category="App" title="Kanban" />
     <KanbanComponent
@@ -18,6 +19,7 @@ const Kanban = () => (
       </ColumnsDirective>
     </KanbanComponent>
   </div>
-);
+  </div>
+)
 
-export default Kanban;
+export default Kanban

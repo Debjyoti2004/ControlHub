@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const Footer = () => (
   <div className="mt-24">
@@ -6,6 +6,6 @@ const Footer = () => (
       © 2025 All rights reserved by CONTROL HUB
     </p>
   </div>
-);
+)
 
-export default Footer;
+export default Footer

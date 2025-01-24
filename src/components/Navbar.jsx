@@ -1,13 +1,13 @@
-import React, { useEffect, useRef } from "react";
-import { AiOutlineMenu } from "react-icons/ai";
-import { FiShoppingCart } from "react-icons/fi";
-import { BsChatLeft } from "react-icons/bs";
-import { RiNotification3Line } from "react-icons/ri";
-import { MdKeyboardArrowDown } from "react-icons/md";
-import { TooltipComponent } from "@syncfusion/ej2-react-popups";
-import avatar from "../data/avatar.jpg";
-import { Cart, Chat, Notification, UserProfile } from ".";
-import { useStateContext } from "../contexts/contextsProvider";
+import React, { useEffect, useRef } from "react"
+import { AiOutlineMenu } from "react-icons/ai"
+import { FiShoppingCart } from "react-icons/fi"
+import { BsChatLeft } from "react-icons/bs"
+import { RiNotification3Line } from "react-icons/ri"
+import { MdKeyboardArrowDown } from "react-icons/md"
+import { TooltipComponent } from "@syncfusion/ej2-react-popups"
+import avatar from "../data/avatar.jpg"
+import { Cart, Chat, Notification, UserProfile } from "."
+import { useStateContext } from "../contexts/contextsProvider"
 
 const NavButton = ({ title, customFun, icon, color, dotColor }) => (
   <TooltipComponent content={title} position="BottomCenter">
@@ -28,63 +28,61 @@ const NavButton = ({ title, customFun, icon, color, dotColor }) => (
 
 const Navbar = () => {
   const {
-    activeMenu,
     setActiveMenu,
     isClicked,
     setIsClicked,
-    handleClick,
     screenSize,
     setScreenSize,
     currentColor,
-  } = useStateContext();
+  } = useStateContext()
 
-  const navbarRef = useRef(null); // Reference to the navbar
+  const navbarRef = useRef(null)
 
-  // Handle clicks outside the navbar
+  
   useEffect(() => {
     const handleOutsideClick = (event) => {
       if (navbarRef.current && !navbarRef.current.contains(event.target)) {
-        // Close all sections when clicking outside
         setIsClicked({
           Cart: false,
           Chat: false,
           Notification: false,
           UserProfile: false,
-        });
+        })
       }
-    };
+    }
 
     document.addEventListener("mousedown", handleOutsideClick);
     return () => {
       document.removeEventListener("mousedown", handleOutsideClick);
-    };
-  }, [setIsClicked]);
+    }
+  }, [setIsClicked])
 
   useEffect(() => {
     const handleResize = () => {
-      setScreenSize(window.innerWidth);
-    };
-    window.addEventListener("resize", handleResize);
-    handleResize();
+      setScreenSize(window.innerWidth)
+    }
+    window.addEventListener("resize", handleResize)
+    handleResize()
 
-    return () => window.removeEventListener("resize", handleResize);
-  }, [setScreenSize]);
+    return () => window.removeEventListener("resize", handleResize)
+  }, [setScreenSize])
 
   useEffect(() => {
     if (screenSize >= 900) {
-      setActiveMenu(true);
+      setActiveMenu(true)
     } else {
-      setActiveMenu(false);
+      setActiveMenu(false)
     }
-  }, [screenSize, setActiveMenu]);
+  }, [screenSize, setActiveMenu])
 
-  // Toggles the state of each section
+
   const toggleSection = (section) => {
     setIsClicked((prev) => ({
       ...prev,
       [section]: !prev[section],
-    }));
-  };
+    }))
+  }
+
 
   return (
     <div ref={navbarRef} className="relative flex justify-between p-2 md:mx-6">
@@ -97,20 +95,20 @@ const Navbar = () => {
       <div className="flex">
         <NavButton
           title="Cart"
-          customFun={() => toggleSection("Cart")} // Toggle Cart visibility
+          customFun={() => toggleSection("Cart")} 
           color={currentColor}
           icon={<FiShoppingCart />}
         />
         <NavButton
           title="Chat"
-          customFun={() => toggleSection("Chat")} // Toggle Chat visibility
+          customFun={() => toggleSection("Chat")} 
           dotColor="#03C9D7"
           color={currentColor}
           icon={<BsChatLeft />}
         />
         <NavButton
           title="Notification"
-          customFun={() => toggleSection("Notification")} // Toggle Notification visibility
+          customFun={() => toggleSection("Notification")}
           dotColor="#03C9D7"
           color={currentColor}
           icon={<RiNotification3Line />}
@@ -118,7 +116,7 @@ const Navbar = () => {
         <TooltipComponent content="profile" position="BottomCenter">
           <div
             className="flex items-center gap-2 p-1 rounded-lg cursor-pointer hover:bg-light-gray"
-            onClick={() => toggleSection("UserProfile")} // Toggle UserProfile visibility
+            onClick={() => toggleSection("UserProfile")} 
           >
             <img className="w-8 h-8 rounded-full" src={avatar} alt="User avatar" />
             <p>
@@ -135,7 +133,7 @@ const Navbar = () => {
         {isClicked.UserProfile && <UserProfile />}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

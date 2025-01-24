@@ -1,13 +1,13 @@
-import React from 'react';
-import { MdOutlineCancel } from 'react-icons/md';
-import { BsCheck } from 'react-icons/bs';
-import { TooltipComponent } from '@syncfusion/ej2-react-popups';
+import React from 'react'
+import { MdOutlineCancel } from 'react-icons/md'
+import { BsCheck } from 'react-icons/bs'
+import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 
-import { themeColors } from '../data/dummy';
-import { useStateContext } from '../contexts/contextsProvider';
+import { themeColors } from '../data/dummy'
+import { useStateContext } from '../contexts/contextsProvider'
 
 const ThemeSettings = () => {
-  const { setColor, setMode, currentMode, currentColor, setThemeSettings } = useStateContext();
+  const { setColor, setMode, currentMode, currentColor, setThemeSettings } = useStateContext()
 
   return (
     <div className="fixed top-0 right-0 w-screen bg-half-transparent nav-item">
@@ -37,7 +37,6 @@ const ThemeSettings = () => {
               onChange={setMode}
               checked={currentMode === 'Light'}
             />
-            {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
             <label htmlFor="light" className="ml-2 cursor-pointer text-md">
               Light
             </label>
@@ -52,7 +51,6 @@ const ThemeSettings = () => {
               className="cursor-pointer"
               checked={currentMode === 'Dark'}
             />
-            {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
             <label htmlFor="dark" className="ml-2 cursor-pointer text-md">
               Dark
             </label>
@@ -82,7 +80,7 @@ const ThemeSettings = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ThemeSettings;
+export default ThemeSettings

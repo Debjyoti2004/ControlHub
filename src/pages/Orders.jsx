@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import {
   GridComponent,
   ColumnsDirective,
@@ -12,9 +12,9 @@ import {
   Edit,
   Page,
   Inject,
-} from '@syncfusion/ej2-react-grids';
-import { ordersData, contextMenuItems, ordersGrid } from '../data/dummy';
-import { Header } from '../components';
+} from '@syncfusion/ej2-react-grids'
+import { ordersData, contextMenuItems, ordersGrid } from '../data/dummy'
+import { Header } from '../components'
 
 const Orders = () => {
   return (
@@ -26,8 +26,8 @@ const Orders = () => {
         contextMenuItems={contextMenuItems}
         allowResizing={true}
         allowFiltering={true}
-        allowPaging={true} // Enable pagination
-        pageSettings={{ pageSize: 10 }} // Configure page size
+        allowPaging={true} 
+        pageSettings={{ pageSize: 10 }} 
       >
         <ColumnsDirective>
           {ordersGrid.map((item, index) => (
@@ -48,7 +48,7 @@ const Orders = () => {
         />
       </GridComponent>
     </div>
-  );
-};
+  )
+}
 
-export default Orders;
+export default Orders
