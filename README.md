@@ -151,8 +151,8 @@ src/
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 📧 Contact
-Your Name - Debjyoti Shit
-Your Name - [debjyotishit27@gmail.com](mailto:debjyotishit27@gmail.com)
+Name - Debjyoti Shit
+- Email - [debjyotishit27@gmail.com](mailto:debjyotishit27@gmail.com)
 
 
 ---
